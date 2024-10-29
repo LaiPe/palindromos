@@ -1,0 +1,5 @@
+[[redirects]]
+from = "https://palindromos-leopeyronnet.netlify.app/*"
+to = "https://palindromos.sandbox.leopeyronnet.fr/:splat"
+status = 301
+force = true
