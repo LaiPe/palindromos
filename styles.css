@@ -1,0 +1,100 @@
+:root{
+    --couleur-theme: #f68203;
+    --couleur-bouton: #0377F6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    color: var(--couleur-theme);
+    height: 25rem;
+    margin-bottom: 2rem;
+    font-family: "Quattrocento", serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 200px;
+}
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.2rem;
+}
+header p {
+    font-size: 1.5rem;
+}
+
+main {
+    margin: 0 1.5rem;
+    max-width: 700px;
+    font-family: "Palanquin", sans-serif;
+    line-height: 1.5rem;
+}
+
+main form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--couleur-theme);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+main form label{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    font-size: 1.5rem;
+}
+main form input {
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--couleur-theme);
+    font-size: inherit;
+    margin: 20px 20px 0;
+    padding: 2px;  
+}
+
+main form button {
+    display: inline;
+
+    background-color: var(--couleur-bouton);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+main #result {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main aside {
+    margin-top: 4rem;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
