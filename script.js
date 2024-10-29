@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const textInput = document.getElementById("text-input");
-    const checkButton = document.getElementById("check-btn");
+    const form = document.querySelector("main form");
     const textResult = document.getElementById("result");
 
     function clearInput(input){
@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    checkButton.addEventListener("click", () => {
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
         if (textInput.value == "") {
             textResult.innerHTML = "Veuillez entrer quelque chose."
         }
