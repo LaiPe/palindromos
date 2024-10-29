@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     checkButton.addEventListener("click", () => {
         if (textInput.value == "") {
-            alert("Please input a value");
+            textResult.innerHTML = "Veuillez entrer quelque chose."
         }
         else if (isPalindrome(textInput)) {
-            textResult.innerHTML = `<strong>${textInput.value}</strong> is a palindrome`
+            textResult.innerHTML = `<strong>${textInput.value}</strong> est un palindrome.`
         }
         else {
-            textResult.innerHTML = `<strong>${textInput.value}</strong> is not a palindrome`
+            textResult.innerHTML = `<strong>${textInput.value}</strong> n'est pas un palindrome.`
         }
 
         clearInput(textInput)
